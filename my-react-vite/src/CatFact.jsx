@@ -16,9 +16,9 @@ function CatFact() {
 
     let cats;
     if (error) {
-        content = <p>{error}</p>
+        cats = <p>{error}</p>
     } else{
-        content = <p>{fact ||'Loading...'}</p>
+        cats = <p>{fact ||'Loading...'}</p>
     }
 
     return (
@@ -28,3 +28,5 @@ function CatFact() {
         </div>
     )
 }
+
+export default CatFact;
